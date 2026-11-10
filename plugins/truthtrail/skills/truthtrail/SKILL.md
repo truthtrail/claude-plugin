@@ -1,16 +1,16 @@
 ---
 name: truthtrail
-description: Use when implementing or testing a ticket in a repo that has .decisions/ — records product decisions and assumptions with npx truthtrail.
+description: Use when implementing or testing a ticket in a repo that uses TruthTrail — records product decisions and assumptions with npx truthtrail.
 ---
 ## TruthTrail: recording decisions
 
-This repo records product decisions in `.decisions/`. Follow these rules.
+This repo records product decisions with TruthTrail: in `.decisions/`, or, when you are logged in (`npx truthtrail login`), on the TruthTrail server and the Jira ticket, where the reporter confirms or rejects them. Follow these rules.
 
 **Find the ticket.** Take the ticket key from the branch name (e.g. `feature/JIRA-231-…`). If there is none, ask the user once.
 
-**Tools.** If TruthTrail MCP tools are available (`record_decision`, `list_decisions`, `why`, `check_branch`, `list_pending`, `resolve_pending`), use them. Otherwise use the `npx truthtrail` commands below.
+**Tools.** If TruthTrail MCP tools are available (`record_decision`, `list_decisions`, `why`, `check_branch`, `list_pending`, `resolve_pending`, `withdraw_decision`), use them. Otherwise use the `npx truthtrail` commands below.
 
-**Before you implement,** run `npx truthtrail list --ticket <KEY>` and follow the decisions it shows. Treat `rejected` ones as must-rework.
+**Before you implement,** run `npx truthtrail list --ticket <KEY>` and follow the decisions it shows. Treat `rejected` ones as must-rework: change the code, then record a new decision with `--supersedes <id>`.
 
 **Record a decision** with `npx truthtrail decide` when:
 - the ticket is silent or ambiguous and your choice changes behaviour a user or QA can see;
