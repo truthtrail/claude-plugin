@@ -1,0 +1,8 @@
+{
+  "description": "TruthTrail: load ticket decisions, capture answered questions, remind before stopping",
+  "hooks": {
+    "SessionStart": [{ "hooks": [{ "type": "command", "command": "npx -y truthtrail hook session-start", "timeout": 30 }] }],
+    "PostToolUse": [{ "matcher": "AskUserQuestion", "hooks": [{ "type": "command", "command": "npx -y truthtrail hook capture", "timeout": 30 }] }],
+    "Stop": [{ "hooks": [{ "type": "command", "command": "npx -y truthtrail hook stop", "timeout": 30 }] }]
+  }
+}

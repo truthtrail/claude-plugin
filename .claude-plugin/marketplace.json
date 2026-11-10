@@ -1,0 +1,13 @@
+{
+  "name": "truthtrail",
+  "description": "TruthTrail: record the decisions your AI coding agent makes, right next to the code.",
+  "owner": { "name": "Dhairya Modh", "url": "https://github.com/dhairyamodh" },
+  "plugins": [
+    {
+      "name": "truthtrail",
+      "source": "./plugins/truthtrail",
+      "description": "Claude records product decisions and assumptions into .decisions/ via MCP tools, loads them at session start, and reminds you before stopping.",
+      "version": "0.2.0"
+    }
+  ]
+}
