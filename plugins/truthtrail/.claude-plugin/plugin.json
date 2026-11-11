@@ -1,7 +1,7 @@
 {
   "name": "truthtrail",
   "displayName": "TruthTrail",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Records the product decisions your AI makes while coding into .decisions/, so tickets, QA and future you know what was decided and why.",
   "author": { "name": "Dhairya Modh", "url": "https://github.com/dhairyamodh" },
   "homepage": "https://github.com/truthtrail/claude-plugin",
