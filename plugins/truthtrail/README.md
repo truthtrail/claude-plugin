@@ -6,10 +6,13 @@ TruthTrail lets Claude **record those decisions itself**, next to your code in `
 
 ## Install
 
-In Claude Code:
+In Claude Code, run these one at a time (not pasted together):
 
 ```
 /plugin marketplace add truthtrail/claude-plugin
+```
+
+```
 /plugin install truthtrail@truthtrail
 ```
 

@@ -1,11 +1,22 @@
 {
   "name": "truthtrail",
   "displayName": "TruthTrail",
-  "version": "0.4.0",
-  "description": "Records the product decisions your AI makes while coding into .decisions/, so tickets, QA and future you know what was decided and why.",
-  "author": { "name": "Dhairya Modh", "url": "https://github.com/dhairyamodh" },
-  "homepage": "https://github.com/truthtrail/claude-plugin",
+  "version": "0.4.3",
+  "description": "Records the product decisions your AI makes while coding, puts them on the Jira ticket or GitHub issue for the reporter to confirm, and shows them as a PR check.",
+  "author": {
+    "name": "Dhairya Modh",
+    "url": "https://github.com/dhairyamodh"
+  },
+  "homepage": "https://truthtrail.pages.dev",
   "repository": "https://github.com/truthtrail/claude-plugin",
   "license": "MIT",
-  "keywords": ["decisions", "jira", "tickets", "qa", "accountability", "mcp", "adr"]
+  "keywords": [
+    "decisions",
+    "jira",
+    "tickets",
+    "qa",
+    "accountability",
+    "mcp",
+    "adr"
+  ]
 }

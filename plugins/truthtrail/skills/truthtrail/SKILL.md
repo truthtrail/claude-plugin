@@ -15,7 +15,7 @@ This repo records product decisions with TruthTrail: in `.decisions/`, or, when 
 **Record a decision** with `npx truthtrail decide` when:
 - the ticket is silent or ambiguous and your choice changes behaviour a user or QA can see;
 - following the ticket would break something, so you changed the behaviour;
-- you assumed something that changes visible behaviour (use `--type assumption`).
+- you assumed something that changes visible behaviour (use `--type assumption`). Anything you chose without the user answering is an assumption, even a well-reasoned one; use `decision` only for what the user answered or told you. If you add details the user didn't choose, record them as a separate assumption.
 
 Do not record pure implementation details with no visible effect.
 
