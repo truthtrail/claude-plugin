@@ -6,7 +6,7 @@ description: Use when implementing or testing a ticket in a repo that uses Truth
 
 This repo records product decisions with TruthTrail: in `.decisions/`, or, when you are logged in (`npx truthtrail login`), on the TruthTrail server and the Jira ticket, where the reporter confirms or rejects them. Follow these rules.
 
-**Find the ticket.** Take the ticket key from the branch name (e.g. `feature/JIRA-231-…` or `VS-1234/login`). If there is none, ask the user once and remember it with `set_ticket` (or `npx truthtrail ticket <KEY>`). TruthTrail shows the ticket's title; if it doesn't match the task, stop and ask the user for the right ticket. To fix a decision recorded on the wrong ticket, use `move_decision` (or `npx truthtrail move <id> <KEY>`).
+**Find the ticket.** Take the ticket key from the branch name (e.g. `feature/JIRA-231-…` or `ABC-1234/login`). If there is none, ask the user once and remember it with `set_ticket` (or `npx truthtrail ticket <KEY>`). TruthTrail shows the ticket's title; if it doesn't match the task, stop and ask the user for the right ticket. To fix a decision recorded on the wrong ticket, use `move_decision` (or `npx truthtrail move <id> <KEY>`).
 
 **Tools.** If TruthTrail MCP tools are available (`record_decision`, `list_decisions`, `why`, `check_branch`, `list_pending`, `resolve_pending`, `withdraw_decision`, `set_ticket`, `move_decision`), use them. Otherwise use the `npx truthtrail` commands below.
 
